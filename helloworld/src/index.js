@@ -2,7 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function HelloWorld() {
-	return <div>Hello World!</div>;
+	return (
+		<div>
+			<Hello />
+			<World />
+		</div>
+	);
+
+	//return React.createElement("div", {}, "hello world");
+}
+
+function Hello() {
+	return <span>Hello</span>;
+}
+
+function World() {
+	return <span>World</span>;
 }
 
 ReactDOM.render(<HelloWorld />, document.getElementById("root"));

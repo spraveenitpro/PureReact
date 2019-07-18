@@ -1,0 +1,8 @@
+.errorbox {
+	border: 1px solid #e3716f;
+	position: relative;
+	width: 450px;
+	height: 250px;
+	padding: 20px;
+	background: #e3716f;
+}

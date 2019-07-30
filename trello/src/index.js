@@ -16,16 +16,15 @@ const list = {
 
 function Trello({ list }) {
 	return (
-		<div>
-			<div>
-				<h1>{list.name}</h1>
-			</div>
-			<div>
+		<div className='card'>
+			<h3>{list.name}</h3>
+			<div className='list'>
 				<ul>
 					{list.listitems.map(item => (
 						<li>{item}</li>
 					))}
 				</ul>
+				Add a card...
 			</div>
 		</div>
 	);

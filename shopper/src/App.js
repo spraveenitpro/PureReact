@@ -14,13 +14,20 @@ class App extends React.Component {
 	};
 
 	renderContent() {
-		return <span>Empty</span>;
+		switch (this.state.activeTab) {
+			default:
+			case 0:
+				return <span>Items</span>;
+			case 1:
+				return <span>Cart</span>;
+		}
 	}
 
 	render() {
+		let { activeTab } = this.state;
 		return (
 			<div className='App'>
-				<Nav />
+				<Nav activeTab={activeTab} onTabChange={this.handleTabChange} />
 				<main className='App-content'>{this.renderContent()}</main>
 			</div>
 		);

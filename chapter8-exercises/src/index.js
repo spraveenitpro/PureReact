@@ -13,6 +13,14 @@ var receiver = {
 	address: "123 Fake st",
 	city: "San Francisco, CA 94101"
 };
+
+function IconButton() {
+	return (
+		<button>
+			<i class='target-icon' />
+		</button>
+	);
+}
 function Stamp() {
 	return (
 		<div className='stamp'>
@@ -27,6 +35,7 @@ function Envelope() {
 			<AddressLabel1 details={sender} />
 			<Stamp />
 			<AddressLabel2 details={receiver} />
+			<IconButton>Do The Thing</IconButton>
 		</div>
 	);
 }

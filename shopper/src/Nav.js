@@ -6,7 +6,7 @@ const Nav = ({ activeTab, onTabChange }) => (
 			<li className={`App-nav-item ${activeTab === 0 && "selected"}`}>
 				{/* <a onClick={() => onTabChange(0)}>Items</a> */}
 				<NavLink index={0} onClick={onTabChange}>
-					Items{" "}
+					Items
 				</NavLink>
 			</li>
 			<li className={`App-nav-item ${activeTab === 1 && "selected"}`}>

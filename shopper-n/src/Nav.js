@@ -23,8 +23,7 @@ class NavLink extends React.Component {
 	};
 
 	render() {
-		return <a onClick={this.handleClick}>{this.props.chidren}</a>;
+		return <a onClick={this.handleClick}>{this.props.children}</a>;
 	}
 }
-
 export default Nav;

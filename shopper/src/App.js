@@ -36,7 +36,7 @@ class App extends React.Component {
 			// if 0 then return Items and if 1 then return Cart
 			default:
 			case 0:
-				return <ItemPage items={items} onAddToCart={this.handleTabChange} />;
+				return <span>Item</span>;
 			case 1:
 				return <span>Cart</span>;
 		}

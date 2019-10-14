@@ -1,30 +1,16 @@
 import React from "react";
 
-const Nav = ({ activeTab, onTabChange }) => (
+const Nav = () => (
 	<nav className='App-nav'>
 		<ul>
-			<li className={`App-nav-item ${activeTab === 0 && "selected"}`}>
-				<NavLink index={0} onClick={onTabChange}>
-					Items
-				</NavLink>
+			<li className='App-nav-item'>
+				<a>Items</a>
 			</li>
-			<li className={`App-nav-item ${activeTab === 1 && "selected"}`}>
-				<NavLink index={1} onClick={onTabChange}>
-					Cart
-				</NavLink>
+			<li className='App-nav-item'>
+				<a>Cart</a>
 			</li>
 		</ul>
 	</nav>
 );
-
-class NavLink extends React.Component {
-	handleClick = () => {
-		this.props.onClick(this.props.index);
-	};
-
-	render() {
-		return <a onClick={this.handleClick}>{this.props.children}</a>;
-	}
-}
 
 export default Nav;
